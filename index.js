@@ -9,5 +9,5 @@ function setThisWithApply(fn,thisValue,arg){
   return fn.apply(thisValue, arg)
 }
 function returnNewFunctionOf(functionToBeCopied, thisValue){
-  return thisValue.bind(functionToBeCopied)
+  return functionToBeCopied.bind(thisValue)
 }
